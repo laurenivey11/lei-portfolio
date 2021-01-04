@@ -93,14 +93,60 @@ section {
     padding: 30px;
     margin: 0 auto;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+.item {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1em;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-width: 2px;
+    border-style: solid;
+}
+.grid-1 {
+    background-image: url(../images/run-buddu.PNG);
+    background-position: top;
+    background-size: cover;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+}
+.grid-2 {
+    background-image: url(../images/102736950-29863400-4314-11eb-9a90-55381f5f9cf6.png);
+    background-position: top;
+    background-size: cover;
+}
+.grid-3 {
+    background-image: url(../images/1_rGiHBnlqf6-koapA2DzUoA.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+.a-name {
+    background-color: var(--tertiary-color);
+    display: inline-block;
+    padding: 5px;
+}
+.contact-info {
+    padding: 20px;
+    font-style: lighter;
+}
+.contact-info a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color: var(--primary-color);
+    text-align: left;
+}
 
 
 
 
 @media screen and (max-width: 980px) {
-    .section-title {
-        width: 80%;
-    }
     .trainer {
         flex: 0 70%;
     }
@@ -128,6 +174,33 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+        .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    section {
+        padding: 30px 15px;
+    }
+    .section-title {
+        border-right: none;
+        border-bottom: 2px solid var(--primary-color);
+        width: 100%;
+        text-align: center;
+    }
+    .section-info {
+        border-left: none;
+        text-align: center;
+        width: 80%;
+    }
     header {
         padding-bottom: 0;
         justify-content: center;
